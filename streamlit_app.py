@@ -11,7 +11,7 @@ category=st.sidebar.radio("Select category", ["Home","Parkinson's Disease", "Kid
 if category == "Parkinson's Disease":
     st.markdown("#### Parkinson's Disease Prediction")
     try:
-        parkinson_model = pickle.load(open(r"E:/user data/Downloads/XGParkinson.pkl", 'rb'))
+        parkinson_model = pickle.load(open(r"XGParkinson.pkl", 'rb'))
     except FileNotFoundError:
         st.error("File not found :astonished:")
         st.stop()
@@ -55,7 +55,7 @@ if category == "Parkinson's Disease":
 elif category == "Kidney Disease":
     st.markdown("#### Kidney Disease Prediction")
     try:
-        kidney_model = pickle.load(open(r"E:/user data/Downloads/XGKidney.pkl", 'rb'))
+        kidney_model = pickle.load(open(r"XGKidney.pkl", 'rb'))
     except FileNotFoundError:
         st.error("File not found :astonished:")
         st.stop()
@@ -112,7 +112,7 @@ elif category == "Liver Disease":
     st.markdown("#### Liver Disease Prediction")
 
     try:
-        liver_model = pickle.load(open("E:/user data/Downloads/XGBLiver.pkl", 'rb'))
+        liver_model = pickle.load(open("XGBLiver.pkl", 'rb'))
     except FileNotFoundError:
         st.error("File not found :astonished:")
         st.stop()    
