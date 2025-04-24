@@ -27,7 +27,7 @@ def set_background_image_local(image_path):
         """,
         unsafe_allow_html=True
     )
-set_background_image_local(r"medical_img")
+set_background_image_local(r"medic_img")
 
 if category == "Parkinson's Disease":
     st.markdown("#### Parkinson's Disease Prediction")
