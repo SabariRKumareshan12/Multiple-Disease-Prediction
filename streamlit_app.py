@@ -5,7 +5,7 @@ import pickle
 import xgboost as xgb
 import base64
 
-st.title("Multiple Disease Prediction :stethoscope:")
+st.title("Multiple Disease Prediction 🩺")
 
 category=st.sidebar.radio("Select category", ["Home","Parkinson's Disease", "Kidney Disease", "Liver Disease"])
 
